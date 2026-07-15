@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferli Malkan Amien - Creative CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        .a4-container {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 2rem auto;
+            background: white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 2.2fr;
+            overflow: hidden;
+        }
+
+        .left-col {
+            background-color: #1e293b;
+            color: #f8fafc;
+            padding: 2.5rem 1.5rem;
+        }
+
+        .right-col {
+            padding: 2.5rem 2rem;
+            background-color: #ffffff;
+        }
+
+        .section-title {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .left-col .section-title {
+            color: #60a5fa;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        .right-col .section-title {
+            color: #2563eb;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.875rem;
+        }
+
+        .skill-badge {
+            background-color: #334155;
+            color: #e2e8f0;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            display: inline-block;
+            margin: 0.25rem;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1.25rem;
+            border-left: 2px solid #bfdbfe;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -0.35rem;
+            top: 0.25rem;
+            width: 0.6rem;
+            height: 0.6rem;
+            background-color: #2563eb;
+            border-radius: 50%;
+        }
+
+        .date-badge {
+            font-size: 0.75rem;
+            color: #64748b;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            display: inline-block;
+        }
+
+        @media print {
+            body { background: white; margin: 0; }
+            .a4-container { box-shadow: none; margin: 0; max-width: 100%; min-height: 100vh; }
+            .left-col { background-color: #1e293b !important; -webkit-print-color-adjust: exact; }
+            .skill-badge { background-color: #334155 !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="a4-container">
+        
+        <!-- LEFT COLUMN -->
+        <div class="left-col">
+            
+            <div class="text-center mb-6">
+                <!-- Placeholder for Profile Picture -->
+                <div class="w-32 h-32 mx-auto rounded-full bg-slate-700 border-4 border-blue-400 mb-4 flex items-center justify-center overflow-hidden">
+                    <img src="C:\Users\ferli\Documents\Ferli Malkan Amien\CV\Digital\Ferli.png" alt="Ferli Malkan Amien" class="w-full h-full object-cover">
+                </div>
+                <h1 class="text-xl font-bold tracking-tight text-white leading-tight">Ferli Malkan Amien</h1>
+                <h3 class="text-l font-bold tracking-tight text-white leading-tight">S.Kom., CISDV, CPS</h3>
+                <p class="text-blue-400 font-medium text-sm mt-2">AI Researcher</p>
+            </div>
+
+            <div class="section-title"><i class="fas fa-address-book"></i> Contact</div>
+            <div class="contact-item">
+                <i class="fas fa-envelope text-blue-400 w-4"></i>
+                <span>ferlimalkana28@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin text-blue-400 w-4"></i>
+                <span>Ferli Malkan Amien</span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-kaggle text-blue-400 w-4"></i>
+                <span>ferlimalkana</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt text-blue-400 w-4"></i>
+                <span>Surabaya, Indonesia</span>
+            </div>
+
+            <div class="section-title"><i class="fas fa-code"></i> Hard Skills</div>
+            <div class="mb-2">
+                <span class="skill-badge">Computer Vision</span>
+                <span class="skill-badge">Machine Learning</span>
+                <span class="skill-badge">AI</span>
+                <span class="skill-badge">Deep Learning</span>
+                <span class="skill-badge">PyTorch</span>
+                <span class="skill-badge">TensorFlow</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">R</span>
+                <span class="skill-badge">Tableau</span>
+                <span class="skill-badge">MySQL & PostgreSQL</span>
+            </div>
+
+            <div class="section-title"><i class="fas fa-users"></i> Soft Skills</div>
+            <div class="mb-2">
+                <span class="skill-badge">Leadership</span>
+                <span class="skill-badge">Public Speaking</span>
+                <span class="skill-badge">Teamwork</span>
+                <span class="skill-badge">Project Management</span>
+            </div>
+
+            <div class="section-title"><i class="fas fa-certificate"></i> Certifications</div>
+            <ul class="text-xs space-y-2 text-slate-300">
+                <li><strong class="text-white">TOEFL ITP: 553</strong> (2025)</li>
+                <li><strong class="text-white">Tableau Specialist</strong> - PASAS Institute (2024)</li>
+                <li><strong class="text-white">Certified Public Speaking</strong> (2024)</li>
+                <li><strong class="text-white">Data Governance Masterclass</strong> (2024)</li>
+                <li><strong class="text-white">Data Analyst Python Track</strong> - DQLab (2023)</li>
+                <li><strong class="text-white">Excel Intermediate</strong> - MySkill (2023)</li>
+                <li><strong class="text-white">LKMM-TL (Advanced Mgt)</strong> - Kemdikbud (2023)</li>
+            </ul>
+
+            <div class="section-title"><i class="fas fa-trophy"></i> Achievements</div>
+            <ul class="text-xs space-y-2 text-slate-300">
+                <li><strong class="text-white">3rd Winner</strong> - Int. Scientific Paper, TeknoCom 2026</li>
+                <li><strong class="text-white">2nd Rank Finalist</strong> - Tourn. Data Science Nasional, Data Academy (2024)</li>
+            </ul>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="right-col">
+            
+            <div class="section-title mt-0"><i class="fas fa-user-circle"></i> Summary</div>
+            <p class="text-sm text-gray-700 leading-relaxed text-justify">
+                Master's-Doctoral Candidate at ITS specializing in Data Science, AI, and Computer Vision. Proficient in Python, R, PyTorch, and TensorFlow. A highly adaptable fast learner with strong leadership and teamwork skills, proven through various technical competitions and organizational experiences.
+            </p>
+
+            <div class="section-title"><i class="fas fa-briefcase"></i> Experience</div>
+            
+            <div class="timeline-item">
+                <div class="date-badge">Sep 2024 - Present</div>
+                <h3 class="font-bold text-gray-800">AI Training Specialist</h3>
+                <h4 class="text-sm text-blue-600 font-medium">Outlier</h4>
+            </div>
+
+            <div class="timeline-item">
+                <div class="date-badge">Feb 2024 – Jun 2024</div>
+                <h3 class="font-bold text-gray-800">Data Governance Staff Intern</h3>
+                <h4 class="text-sm text-blue-600 font-medium">PT Bank CIMB Niaga Tbk.</h4>
+            </div>
+
+            <div class="timeline-item">
+                <div class="date-badge">Dec 2023 – Jan 2024</div>
+                <h3 class="font-bold text-gray-800">Virtual Intern: Data Scientist</h3>
+                <h4 class="text-sm text-blue-600 font-medium">ID/X Partners x Rakamin Academy</h4>
+            </div>
+
+            <div class="timeline-item">
+                <div class="date-badge">Nov 2023 – Dec 2023</div>
+                <h3 class="font-bold text-gray-800">Virtual Intern: Big Data Analytics</h3>
+                <h4 class="text-sm text-blue-600 font-medium">Kimia Farma x Rakamin Academy</h4>
+            </div>
+
+            <div class="timeline-item">
+                <div class="date-badge">Aug 2022 – Jan 2025</div>
+                <h3 class="font-bold text-gray-800">Assistant Lecturer</h3>
+                <h4 class="text-sm text-blue-600 font-medium">Computer Science, Universitas Lampung</h4>
+            </div>
+
+            <div class="section-title"><i class="fas fa-graduation-cap"></i> Education</div>
+            
+            <div class="mb-4 relative pl-4 border-l-2 border-gray-200">
+                <div class="absolute -left-1.5 top-1.5 w-2.5 h-2.5 bg-blue-500 rounded-full"></div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-gray-800">Institut Teknologi Sepuluh Nopember</h3>
+                        <h4 class="text-sm text-gray-700">Master of Informatics and Doctor of Computer Science</h4>
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded">GPA: 3.80</span>
+                </div>
+                <div class="text-xs text-gray-500 mb-1">Aug 2025 – Present</div>
+                <p class="text-xs text-gray-600 mt-1"><i class="fas fa-award text-yellow-500"></i> PMDSU Scholarship Awardee specializing in Medical AI.</p>
+            </div>
+
+            <div class="mb-4 relative pl-4 border-l-2 border-gray-200">
+                <div class="absolute -left-1.5 top-1.5 w-2.5 h-2.5 bg-blue-500 rounded-full"></div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-gray-800">Universitas Lampung</h3>
+                        <h4 class="text-sm text-gray-700">Bachelor of Computer Science</h4>
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded">GPA: 3.84</span>
+                </div>
+                <div class="text-xs text-gray-500">Aug 2021 – Apr 2025</div>
+                <p class="text-xs text-gray-600 mt-1"><i class="fas fa-award text-yellow-500"></i> 2nd highest academic ranking among faculty graduates.</p>
+            </div>
+
+            <div class="section-title"><i class="fas fa-project-diagram"></i> Key Projects</div>
+            <ul class="list-disc pl-5 text-xs text-gray-700 space-y-1.5">
+                <li><strong>Comparative Study of CNN Architectures:</strong> ConvNeXt, MobileNetV3, and EfficientNet for Oral Disease Diagnosis (2024)</li>
+                <li><strong>Unmasking Global Financial Anomalies:</strong> A Deep Dive into Illicit Money Transactions (2024)</li>
+                <li><strong>Mushroom Dataset Classification:</strong> Comparison of Classification Models (Binary Classification) (2024)</li>
+                <li><strong>Deep Learning Face Recognition:</strong> For Student Attendance System (2023)</li>
+                <li><strong>Inflation & Job Positions Analysis:</strong> Classification Using a Decision Tree Model (2023)</li>
+            </ul>
+
+            <div class="section-title mt-4"><i class="fas fa-hands-helping"></i> Organizations & Volunteer</div>
+            
+            <div class="grid grid-cols-2 gap-4 text-sm mt-2">
+                <div>
+                    <h4 class="font-bold text-gray-800">IEEE</h4>
+                    <p class="text-xs text-blue-600 mb-1">Member (CIS, SPS, Young Professionals)</p>
+                    <p class="text-xs text-gray-500">May 2026 – Present</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800">HMP ITS</h4>
+                    <p class="text-xs text-blue-600 mb-1">Chairman</p>
+                    <p class="text-xs text-gray-500">Jan 2026 – Present</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800">Himakom FMIPA Unila</h4>
+                    <p class="text-xs text-blue-600 mb-1">Chairman</p>
+                    <p class="text-xs text-gray-500">Jan 2023 – Jan 2024</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800">Int. Delegation Experience</h4>
+                    <p class="text-xs text-blue-600 mb-1">Indonesian Delegate (SDGs)</p>
+                    <p class="text-xs text-gray-500">Aug 2021 – Nov 2022</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-800">Volunteers</h4>
+                    <p class="text-xs text-blue-600 mb-1">Over 30 Events</p>
+                    <p class="text-xs text-gray-500">Jan 2022 – May 2024</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
